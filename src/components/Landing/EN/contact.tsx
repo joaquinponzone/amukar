@@ -61,7 +61,7 @@ const ContactMobile = ({ width, height, bg }: ContextProps) => {
         <Spacer />
         <Heading fontSize='2xl'>Contact me</Heading>
         <Spacer />
-        <Link w='80%' href='https://wa.me/5491122515318' isExternal>
+        <Link w='80%' href='https://wa.me/5491165324519' isExternal>
           <Button variant='callToAction' w='full'>
             <HStack w='full'>
               <Spacer />
@@ -74,7 +74,7 @@ const ContactMobile = ({ width, height, bg }: ContextProps) => {
         <Link
           w='80%'
           minW='fit-content'
-          href='https://wa.me/5491122515318'
+          href='https://wa.me/5491165324519'
           isExternal
         >
           <Button variant='wpp' w='full'>
@@ -125,7 +125,7 @@ const ContactDesktop = ({ width, height, bg }: ContextProps) => {
             </Link>
             <Text>o</Text>
             <Spacer />
-            <Link w='50%' href='https://wa.me/5491122515318' isExternal>
+            <Link w='50%' href='https://wa.me/5491165324519' isExternal>
               <Button variant='wpp' w='full'>
                 <HStack w='full'>
                   <Spacer />
