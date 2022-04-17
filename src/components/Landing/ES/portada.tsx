@@ -105,37 +105,27 @@ const LandingDesktop = ({ width, height, bg }: ContextProps) => {
     }
   }, [scroll]);
 
-  let mask = {
-    backgroundColor: "rgba(46, 46, 46, .5)",
-    height: "94vh",
-    width: "100vw",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  };
-
   return (
     <VStack
       backgroundImage={URL_backgrounds[1]}
       backgroundSize='cover'
-      backgroundAttachment='fixed'
+      // backgroundAttachment='fixed'
       backgroundPosition='center'
       w='full'
-      h='94vh'
+      h='54vh'
     >
-      <VStack style={mask}>
-        <Spacer />
-        <Box>
-          <Center>
-            <Image w='50%' src='https://i.imgur.com/WbgTgzk.png' />
-          </Center>
-        </Box>
-        <Box>
-          <Text fontSize={[0, 0, "20px", "25px"]} textColor={"white"}>
-            Conectando Argentina
-          </Text>
-        </Box>
-        <Spacer />
+      <Spacer />
+      <Box>
+        <Center>
+          <Image w='50%' src='https://i.imgur.com/WbgTgzk.png' />
+        </Center>
+      </Box>
+      <Box>
+        <Text fontSize={[0, 0, "20px", "25px"]} textColor={"white"}>
+          Conectando Argentina
+        </Text>
+      </Box>
+      {/* <Spacer />
         <Box>
           {showArrow ? (
             <Button
@@ -156,9 +146,8 @@ const LandingDesktop = ({ width, height, bg }: ContextProps) => {
               <ChevronUpIcon w={20} h={20} />
             </Button>
           )}
-        </Box>
-        <Spacer />
-      </VStack>
+        </Box> */}
+      <Spacer />
     </VStack>
   );
 };

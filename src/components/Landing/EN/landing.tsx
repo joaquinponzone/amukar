@@ -104,15 +104,6 @@ const LandingDesktop = ({ width, height, bg }: ContextProps) => {
     }
   }, [scroll]);
 
-  let mask = {
-    backgroundColor: "rgba(46, 46, 46, .2)",
-    height: "94vh",
-    width: "100vw",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  };
-
   return (
     <VStack
       backgroundImage={URL_backgrounds[1]}
@@ -120,44 +111,42 @@ const LandingDesktop = ({ width, height, bg }: ContextProps) => {
       // backgroundAttachment='fixed'
       backgroundPosition='center'
       w='full'
-      h='94vh'
+      h='54vh'
     >
-      <VStack style={mask}>
-        <Spacer />
-        <Box>
-          <Center>
-            <Image w='50%' src='https://i.imgur.com/WbgTgzk.png' />
-          </Center>
-        </Box>
-        <Box>
-          <Text fontSize={[0, 0, "20px", "25px"]} textColor={"white"}>
-            Conecting Argentina
-          </Text>
-        </Box>
-        <Spacer />
-        <Box>
-          {showArrow ? (
-            <Button
-              as='a'
-              backgroundColor={"transparent"}
-              color={"yellow.500"}
-              onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}
-            >
-              <ChevronDownIcon w={20} h={20} />
-            </Button>
-          ) : (
-            <Button
-              as='a'
-              backgroundColor={"transparent"}
-              color={"yellow.500"}
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              <ChevronUpIcon w={20} h={20} />
-            </Button>
-          )}
-        </Box>
-        <Spacer />
-      </VStack>
+      <Spacer />
+      <Box>
+        <Center>
+          <Image w='50%' src='https://i.imgur.com/WbgTgzk.png' />
+        </Center>
+      </Box>
+      <Box>
+        <Text fontSize={[0, 0, "20px", "25px"]} textColor={"white"}>
+          Conecting Argentina
+        </Text>
+      </Box>
+      {/* <Spacer /> */}
+      {/* <Box>
+        {showArrow ? (
+          <Button
+            as='a'
+            backgroundColor={"transparent"}
+            color={"yellow.500"}
+            onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}
+          >
+            <ChevronDownIcon w={20} h={20} />
+          </Button>
+        ) : (
+          <Button
+            as='a'
+            backgroundColor={"transparent"}
+            color={"yellow.500"}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            <ChevronUpIcon w={20} h={20} />
+          </Button>
+        )}
+      </Box> */}
+      <Spacer />
     </VStack>
   );
 };
